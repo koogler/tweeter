@@ -8,6 +8,8 @@ $(document).ready(function () {
     findCounter.text(charCount)
     if (charCount < 0) {
       findCounter.css("color", "red")
+    } else {
+      findCounter.css("color", "black")
     }
   });
   console.log('test123')

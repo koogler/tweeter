@@ -1,0 +1,50 @@
+.tweetBox {
+  justify-content: flex-start;
+  margin: 5em;
+  border: 3px solid black;
+  transition: box-shadow .3s;
+  background: rgb(255, 255, 255);
+}
+
+.tweetBox:hover{
+  box-shadow: 15px 15px 15px rgba(33,33,33,.2); 
+}
+
+hr{
+  width: 90%;
+  /* margin:0 auto */
+}
+
+.tweet-header{
+  height: 4em;
+}
+.tweet-footer{
+  height: 3em;
+}
+
+.fullName {
+  float:left;
+  margin-left: 1.5em;
+}
+
+.usernameID{
+  float:right;
+  margin-right: 1.5em;
+  font-weight:lighter
+}
+
+.iconPack{
+  float:right;
+  margin-right: 1.5em;
+  font-weight:lighter
+}
+
+.iconPack:hover {
+  color: brown;
+}
+
+.postedTweet{
+  margin-left: 3em;
+  border-width: 0 0 2px;
+  height: 2.2em;
+}
