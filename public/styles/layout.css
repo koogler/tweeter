@@ -15,11 +15,20 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(212, 212, 212);
+  background-color: rgb(212, 212, 212);
   font-size: 24px;
 }
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main {
+  width: 95%;
+  margin:auto;
+  background-color: rgb(212, 212, 212);
+  padding-bottom: 50px;
+}

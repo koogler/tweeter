@@ -1,0 +1,14 @@
+.headerDesign {
+  display: flex;
+  height: 400px;
+  width: auto;
+  background: #6b2a2a;
+  background-image: url(https://www.transparenttextures.com/patterns/always-grey.png);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center
+}
+
+.image {
+  margin: -2.33em;
+}
