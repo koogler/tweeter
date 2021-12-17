@@ -1,14 +1,45 @@
-.headerDesign {
-  display: flex;
-  height: 525px;
-  width: auto;
-  background: #6b2a2a;
-  background-image: url(https://www.transparenttextures.com/patterns/always-grey.png);
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center
+/* Another tablet breakpoint is maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  .headerDesign {
+    display: flex;
+    height: 525px;
+    width: auto;
+    background: #6b2a2a;
+    background-image: url(https://www.transparenttextures.com/patterns/always-grey.png);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
+  }
+  
+  .image {
+    margin: -2.33em;
+  }
 }
 
-.image {
-  margin: -2.33em;
+@media only screen and (min-width: 1024px) {
+body{
+  display:flex
 }
+  .headerDesign {
+    margin-left: 3em;
+    margin-top: 7em;
+    display: flex;
+    height: 400px;
+    width: 500px;
+    background: #6b2a2a;
+    background-image: url(https://www.transparenttextures.com/patterns/always-grey.png);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
+  }
+  
+  .image {
+    margin: -2.33em;
+  }
+
+  .container{
+    width: 32em;
+    margin-top: 5em;
+  }
+}
+

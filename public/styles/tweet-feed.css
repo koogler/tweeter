@@ -25,7 +25,14 @@ hr{
 
 .nameOfWriter {
   float:left;
-  margin-left: 1.5em;
+  margin-left: 1em;
+  margin-top: 1.2em;
+}
+
+.avatar {
+  float:left;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 
 .dateSincePost {
@@ -57,4 +64,6 @@ hr{
   margin-right: 3em;
   margin-bottom: 1em;
   word-wrap: break-word;
+  overflow:hidden;
+  height:1%;
 }

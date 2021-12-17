@@ -9,6 +9,8 @@ $(document).ready(function () {
   const createTweetElement = function (tweet) {
     const $tweetHeader = $('<header>').css('clear', 'both').addClass('tweet-header')
     const $tweetFooter = $('<footer>').css('clear', 'both').addClass('tweet-footer')
+    const $img = $('<img>')
+    $img.addClass('avatar').attr('src', tweet.user.avatars);
     const $nameOfWriter = $('<h3>').text(tweet.user.name)
     $nameOfWriter.addClass("nameOfWriter")
     const $usernameID = $('<h3>').text(tweet.user.handle)
@@ -18,14 +20,14 @@ $(document).ready(function () {
     const $hr = $('<hr>')
     const $dateSincePost = $('<p>').text(timeago.format(tweet["created_at"]))
     $dateSincePost.addClass('dateSincePost')
-    const $iconOne = $('<p>').text('Icon 3')
+    const $iconOne = $('<p>').text('Save')
     $iconOne.addClass('iconPack')
-    const $iconTwo = $('<p>').text('Icon 2')
+    const $iconTwo = $('<p>').text('Retweet')
     $iconTwo.addClass('iconPack')
-    const $iconThree = $('<p>').text('Icon 1')
+    const $iconThree = $('<p>').text('Like')
     $iconThree.addClass('iconPack')
 
-    $tweetHeader.append($nameOfWriter, $usernameID)
+    $tweetHeader.append($img, $nameOfWriter, $usernameID)
     $tweetFooter.append($dateSincePost, $iconOne, $iconTwo, $iconThree)
 
     const $endTweet = $('<article>').addClass('tweetBox')
