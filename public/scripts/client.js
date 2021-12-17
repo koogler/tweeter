@@ -6,6 +6,8 @@
 $(document).ready(function () {
   $("#userError").slideUp()
   $("#userError").hide()
+
+  // Creates a new function and prints it as an article with all the relevant info to put it to our homepage
   const createTweetElement = function (tweet) {
     const $tweetHeader = $('<header>').css('clear', 'both').addClass('tweet-header')
     const $tweetFooter = $('<footer>').css('clear', 'both').addClass('tweet-footer')
@@ -35,6 +37,7 @@ $(document).ready(function () {
     return $endTweet
   }
 
+  // Loops through all of our tweets to feed them in the variable thats being shown on the homepage
   const renderTweets = function (tweets) {
     const $tweetBox = $('#tweetContainer')
     $tweetBox.empty()
@@ -46,6 +49,7 @@ $(document).ready(function () {
 
   const $form = $('#newTweetForm')
 
+  // Ajax to render the tweets on the homepage
   const loadTweets = function () {
     $.ajax({
       url: '/tweets',
@@ -60,6 +64,7 @@ $(document).ready(function () {
     })
   }
 
+  // Loads tweets, or shows an error box if the info given in the tweet textarea is invalid.
   $form.on('submit', function (event) {
     event.preventDefault()
     const serializedTweet = decodeURI($(this).serialize())

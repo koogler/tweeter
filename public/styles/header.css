@@ -1,4 +1,4 @@
-/* Another tablet breakpoint is maximum width of 1024px */
+/* The display for user if they're on a tablet device (1024 pixel max) */
 @media only screen and (max-width: 1024px) {
   .headerDesign {
     display: flex;
@@ -15,6 +15,8 @@
     margin: -2.33em;
   }
 }
+
+/* The display for user if they're on a standard browser (1024 pixel min) */
 
 @media only screen and (min-width: 1024px) {
 body{

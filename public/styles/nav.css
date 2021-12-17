@@ -1,3 +1,5 @@
+/* Top nav bar, always there and slides down as user scrolls through the page */
+
 .navigation {
   width: 100%;
   display:flex;

@@ -1,3 +1,4 @@
+/* creates the beautiful box that each tweet is contained in */
 .tweetBox {
   justify-content: flex-start;
   margin: 5em;
@@ -13,7 +14,6 @@
 
 hr{
   width: 90%;
-  /* margin:0 auto */
 }
 
 .tweet-header{
@@ -22,6 +22,9 @@ hr{
 .tweet-footer{
   height: 3em;
 }
+
+
+/* CSS to style the box, properly spacing and formatting in */
 
 .nameOfWriter {
   float:left;

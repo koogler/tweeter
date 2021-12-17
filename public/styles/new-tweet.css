@@ -1,3 +1,5 @@
+/* Styles the tweet section with each of the tweets, like the counter, timer, and user options */
+
 .new-tweet{
   width: 85%;
   border-radius: 10px;
@@ -34,18 +36,3 @@
   float: right;
   font-family: 'Bungee', cursive;
 }
-
-/* .bottomBorderTextbox{
-  display:flex;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-  background-color: #eee;
-  outline: none;
-  flex-grow: 5;
-  background-color: #f4f1ec;
-  color: #f4f1ec;
-  resize:none;
-  width: 100%;
-}  */
