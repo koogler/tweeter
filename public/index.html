@@ -28,7 +28,9 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -47,7 +49,7 @@
     </div>
     <br>
     <div>
-      <h2>Your Name</h2>
+      <h2>Evan Parker</h2>
     </div>
   </header>
 
@@ -55,8 +57,10 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section>
-      <h2>Compose Tweet</h2>
-      <form action="/tweets" method="POST" class="new-tweet">
+      <form id="newTweetForm" action="/tweets" method="POST" class="new-tweet">
+        <div id="userError">
+          <h3> ⚠️ ERROR: Hey, either the box is empty, or it's too full! ⚠️ </h3>
+        </div>
         <div>
           <textarea placeholder="What are you humming about?" class="textBox" type="text" name="text"
             id="tweet-text"></textarea>
@@ -65,22 +69,22 @@
         </div>
       </form>
     </section>
-    <article class="tweetBox">
-      <header style=clear:both class="tweet-header">
-        <h2 class="fullName">Newton</h2>
-        <h2 class="usernameID">@SirIsaac</h2>
-      </header>
-      <div class="postedTweet">
-        <p>If i have seen further it is by standing on the shoulders of giants</p>
-      </div>
-      <hr>
-      <footer style=clear:both class="tweet-footer">
-        <p class="fullName">10 days ago</p>
-        <p class="iconPack">icon3</p>
-        <p class="iconPack">icon2</p>
-        <p class="iconPack">icon1</p>
-      </footer>
-    </article>
+    <section id="tweetContainer">
+      <!-- <article class="tweetBox"> -->
+      <!-- <header style=clear:both class="tweet-header">
+          <h2 class="nameOfWriter">${tweetData.user.name}</h2>
+          <h2 class="usernameID">@SirIsaac</h2>
+        </header>
+        <p class="tweetBody">If i have seen further it is by standing on the shoulders of giants</p>
+        <hr>
+        <footer style=clear:both class="tweet-footer">
+          <p class="dateSincePost">10 days ago</p>
+          <p class="iconPack">icon3</p>
+          <p class="iconPack">icon2</p>
+          <p class="iconPack">icon1</p> -->
+      <!-- </footer> -->
+      <!-- </article> -->
+    </section>
   </main>
 </body>
 

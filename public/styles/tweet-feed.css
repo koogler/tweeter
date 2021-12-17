@@ -2,6 +2,7 @@
   justify-content: flex-start;
   margin: 5em;
   border: 3px solid black;
+  border-radius: 5px;
   transition: box-shadow .3s;
   background: rgb(255, 255, 255);
 }
@@ -22,7 +23,12 @@ hr{
   height: 3em;
 }
 
-.fullName {
+.nameOfWriter {
+  float:left;
+  margin-left: 1.5em;
+}
+
+.dateSincePost {
   float:left;
   margin-left: 1.5em;
 }
@@ -30,7 +36,8 @@ hr{
 .usernameID{
   float:right;
   margin-right: 1.5em;
-  font-weight:lighter
+  font-weight:lighter;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .iconPack{
@@ -43,8 +50,11 @@ hr{
   color: brown;
 }
 
-.postedTweet{
+.tweetBody{
   margin-left: 3em;
   border-width: 0 0 2px;
   height: 2.2em;
+  margin-right: 3em;
+  margin-bottom: 1em;
+  word-wrap: break-word;
 }

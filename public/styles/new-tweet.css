@@ -17,6 +17,11 @@
   background-color: #fff;
   font-weight: bold;
 }
+#userError{
+  border: 3px solid rgb(255, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+}
 
 .tweetButton {
   float:left;
